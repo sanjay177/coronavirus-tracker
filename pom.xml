@@ -11,6 +11,7 @@
 	<groupId>com.corona.tracker</groupId>
 	<artifactId>coronavirus-tracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>coronavirus-tracker</name>
 	<description>Demo project for Spring Boot</description>
 

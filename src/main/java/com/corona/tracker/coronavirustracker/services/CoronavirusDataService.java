@@ -24,8 +24,9 @@ public class CoronavirusDataService {
     private List<LocationStats> locationStatsList = new ArrayList<>();
 
     @PostConstruct
-    @Scheduled(cron = "* * 1 * * *")
+    @Scheduled(cron = "* * 4 * * *")
     public void fetchVirusData() {
+        locationStatsList.clear();
         try {
             URL url = new URL(VIRUS_DATA_URL);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
